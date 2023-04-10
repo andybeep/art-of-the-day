@@ -89,4 +89,16 @@
               });
               shape.addEventListener("mouseup", function(event) {
                 isDragging = false;
-             
+                       });
+        }
+      })
+      .catch(error => console.log(error));
+  }
+  
+  // Callback function for geolocation error
+  function error(error) {
+    console.log(error.message);
+  }
+</script>
+</body>
+</html>
